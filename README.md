@@ -2,14 +2,14 @@ This demo shows how the propsRef approach resolves react hooks dependencies issu
 Also we are trying to show the natural way of rewriting class components in hooks and the issues we can meet on that way.
 
 Component changes in chronological order
-* Component-0
-* Component-1 - with linter error
-* Component-1-fixed - fixed linter error
-* Component-2 - with fetch logic
-* Component-2-fix1 - fixed linter error
-* Component-2-fixed - fixed refetching by propsRef
-* Component-2-decomposed - extracted hooks
-* Component-0-decomposed - extracted class methods to compare with extracted hooks
+* `Component-0`
+* `Component-1` - with linter error
+* `Component-1-fixed` - fixed linter error
+* `Component-2` - with fetch logic
+* `Component-2-fix1` - fixed linter error
+* `Component-2-fixed` - fixed refetching by propsRef
+* `Component-2-decomposed` - extracted hooks
+* `Component-0-decomposed` - extracted class methods to compare with extracted hooks
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
