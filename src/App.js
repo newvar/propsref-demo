@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Component from "./Component-2-fixed";
 
-function App() {
+const ComponentContainer = () => {
+  const [mute, setMute] = useState(false);
+  const [volume, setVolume] = useState(1);
+  const [src, setSrc] = useState("file0");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Component
+      mute={mute}
+      toggleMute={() => setMute(prevMute => !prevMute)}
+      volume={volume}
+      increaseVolume={() => setVolume(prevVolume => prevVolume + 1)}
+      src={src}
+      setSrc={setSrc}
+    />
   );
-}
+};
+
+const App = () => <ComponentContainer />;
 
 export default App;
